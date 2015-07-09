@@ -1,4 +1,4 @@
-var debug = require('debug')('exec-npm');
+var debug = require('debug')('npm-cmd');
 var spawn = require('child_process').spawn;
 var cmd   = process.platform === 'win32' ? 'npm.cmd' : 'npm';
 
