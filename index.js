@@ -72,6 +72,7 @@ module.exports = {
 
       case 'object':
         if (!Array.isArray(pkgs)) {
+          done = opts;
           opts = pkgs;
           pkgs = [];
         }
@@ -79,6 +80,7 @@ module.exports = {
 
       case 'function':
         done = pkgs;
+        opts = {};
         pkgs = [];
         break;
 
