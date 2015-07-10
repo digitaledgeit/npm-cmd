@@ -34,7 +34,7 @@ function exec(args, opts, done) {
       done(error('NPM failed due to an error.', cmd, args, opts, stderr, prev));
     })
     .on('close', function(code) {
-      if (code !== 0) {
+      if (code !== 0 || stderr.indexOf('ERR') !== -1) { //https://github.com/npm/npm/issues/4752
         done(error('NPM exited due to an error.', cmd, args, opts, stderr));
       } else {
         done(null);
