@@ -1,7 +1,14 @@
 {
   "name": "npm-cmd",
-  "version": "0.1.0",
+  "version": "0.2.0",
+  "description": "An API to execute `npm` commands programmatically.",
+  "keywords": ["npm", "cmd", "run", "exec", "command", "spawn", "install", "dedupe"],
   "dependencies": {
     "debug": "^2.2.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:digitaledgeit/npm-cmd.git"
+  },
+  "license": "MIT"
 }
